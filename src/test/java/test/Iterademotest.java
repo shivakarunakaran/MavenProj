@@ -2,13 +2,14 @@
 
 package test;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-import basepkg.Demobasecls;
+import basepkg.Iterabase;
 import page.Iterademopage;
 import utilities.Iterautils;
 
-public class Iterademotest extends Demobasecls
+public class Iterademotest extends Iterabase
 {
 	
 	@Test
@@ -24,6 +25,7 @@ public class Iterademotest extends Demobasecls
 	{
 		
 
+		WebDriver driver = null;
 		Iterademopage iterobj=new Iterademopage(driver);
 		
 		String f1="C:\\Users\\Shiva Karunakaran\\Documents\\TestData\\DataItera.xlsx";
