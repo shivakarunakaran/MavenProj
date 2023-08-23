@@ -3,7 +3,8 @@
 package basepkg;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeTest;
 
 public class Iterabase
@@ -17,7 +18,7 @@ public class Iterabase
 	public void setUp()
 	{
 		
-		driver=new FirefoxDriver();
+		driver=new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.get(baseurl);
 	

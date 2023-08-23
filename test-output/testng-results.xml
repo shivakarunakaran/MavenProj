@@ -2,24 +2,54 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-31T12:59:56 IST" name="Default suite" finished-at="2023-07-31T13:00:52 IST" duration-ms="55544">
+  <suite started-at="2023-08-23T21:50:47 IST" name="Default suite" finished-at="2023-08-23T21:52:00 IST" duration-ms="72959">
     <groups>
     </groups>
-    <test started-at="2023-07-31T12:59:56 IST" name="Default test" finished-at="2023-07-31T13:00:52 IST" duration-ms="55544">
-      <class name="test.Iterademotest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Iterademotest@69e153c5]" started-at="2023-07-31T12:59:56 IST" name="setUp" finished-at="2023-07-31T13:00:34 IST" duration-ms="38317" status="PASS">
+    <test started-at="2023-08-23T21:50:47 IST" name="Default test" finished-at="2023-08-23T21:52:00 IST" duration-ms="72959">
+      <class name="test.Fblogintestdatadriven">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Fblogintestdatadriven@173ed316]" started-at="2023-08-23T21:50:47 IST" name="setUp" finished-at="2023-08-23T21:51:17 IST" duration-ms="29810" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="demodatadrive()[pri:0, instance:test.Iterademotest@69e153c5]" started-at="2023-07-31T13:00:35 IST" name="demodatadrive" finished-at="2023-07-31T13:00:51 IST" duration-ms="16530" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="verifyLoginWithValidData()[pri:0, instance:test.Fblogintestdatadriven@173ed316]" started-at="2023-08-23T21:51:17 IST" name="verifyLoginWithValidData" finished-at="2023-08-23T21:52:00 IST" duration-ms="43046" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+              <![CDATA[element click intercepted: Element <button value="1" class="_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy" name="login" data-testid="royal_login_button" type="submit" id="u_0_5_qr">...</button> is not clickable at point (963, 304). Other element would receive the click: <div class="_3ixn"></div>
+  (Session info: MicrosoftEdge=116.0.1938.54)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [b03ac451ffe7a930664671242744e146, clickElement {id=428F04A17F509CC5A1773CCFA2268C69_element_23}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57780}, msedge: {msedgedriverVersion: 116.0.1938.54 (e584466f74bf..., userDataDir: C:\Users\SHIVAK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57780/devtoo..., se:cdpVersion: 116.0.1938.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on windows (b03ac451ffe7a930664671242744e146)] -> name: login]
+Session ID: b03ac451ffe7a930664671242744e146]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-at page.Iterademopage.valuesset(Iterademopage.java:49)
-at test.Iterademotest.demodatadrive(Iterademotest.java:58)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button value="1" class="_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy" name="login" data-testid="royal_login_button" type="submit" id="u_0_5_qr">...</button> is not clickable at point (963, 304). Other element would receive the click: <div class="_3ixn"></div>
+  (Session info: MicrosoftEdge=116.0.1938.54)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [b03ac451ffe7a930664671242744e146, clickElement {id=428F04A17F509CC5A1773CCFA2268C69_element_23}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57780}, msedge: {msedgedriverVersion: 116.0.1938.54 (e584466f74bf..., userDataDir: C:\Users\SHIVAK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57780/devtoo..., se:cdpVersion: 116.0.1938.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on windows (b03ac451ffe7a930664671242744e146)] -> name: login]
+Session ID: b03ac451ffe7a930664671242744e146
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at page.Fblogindatadriven.loginbtnclick(Fblogindatadriven.java:24)
+at test.Fblogintestdatadriven.verifyLoginWithValidData(Fblogintestdatadriven.java:33)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -50,11 +80,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- demodatadrive -->
-      </class> <!-- test.Iterademotest -->
+        </test-method> <!-- verifyLoginWithValidData -->
+      </class> <!-- test.Fblogintestdatadriven -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
