@@ -3,7 +3,7 @@
 package basepkg;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.BeforeTest;
 
 public class Demobasecls 
@@ -17,7 +17,7 @@ public class Demobasecls
 	public void setUp()
 	{
 		
-		driver=new FirefoxDriver();
+		driver=new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.get(baseurl);
 	
