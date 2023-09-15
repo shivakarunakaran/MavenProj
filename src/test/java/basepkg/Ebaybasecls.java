@@ -1,26 +1,20 @@
-//DemoTestBaseClass
-
 package basepkg;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.BeforeTest;
 
-public class Demobasecls 
+public class Ebaybasecls 
 {
-	
 	public WebDriver driver;
 	
-	String baseurl="https://itera-qa.azurewebsites.net/home/automation";
+	String url="https://www.ebay.com/";
 	
 	@BeforeTest
 	public void setUp()
 	{
-		
 		driver=new EdgeDriver();
 		driver.manage().window().maximize();
-		driver.get(baseurl);
-	
+		driver.get(url);
 	}
-	
 }

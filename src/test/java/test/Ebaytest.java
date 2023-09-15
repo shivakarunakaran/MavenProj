@@ -1,10 +1,10 @@
 package test;
 
 import org.testng.annotations.Test;
-import basepkg.Ebaybase;
+import basepkg.Ebaybasecls;
 import page.Ebaypage;
 
-public class Ebaytest extends Ebaybase
+public class Ebaytest extends Ebaybasecls
 {	
 	@Test
 	public void test1()
