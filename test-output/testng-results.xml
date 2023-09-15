@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-15T12:27:30 IST" name="Default suite" finished-at="2023-09-15T12:28:17 IST" duration-ms="46627">
+  <suite started-at="2023-09-15T13:30:36 IST" name="Default suite" finished-at="2023-09-15T13:31:28 IST" duration-ms="51574">
     <groups>
     </groups>
-    <test started-at="2023-09-15T12:27:30 IST" name="Default test" finished-at="2023-09-15T12:28:17 IST" duration-ms="46627">
+    <test started-at="2023-09-15T13:30:36 IST" name="Default test" finished-at="2023-09-15T13:31:28 IST" duration-ms="51574">
       <class name="test.Ebaytest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Ebaytest@7674f035]" started-at="2023-09-15T12:27:30 IST" name="setUp" finished-at="2023-09-15T12:27:51 IST" duration-ms="20752" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Ebaytest@69e153c5]" started-at="2023-09-15T13:30:36 IST" name="setUp" finished-at="2023-09-15T13:30:53 IST" duration-ms="16706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test1()[pri:0, instance:test.Ebaytest@7674f035]" started-at="2023-09-15T12:27:51 IST" name="test1" finished-at="2023-09-15T12:28:17 IST" duration-ms="25517" status="PASS">
+        <test-method signature="test1()[pri:0, instance:test.Ebaytest@69e153c5]" started-at="2023-09-15T13:30:53 IST" name="test1" finished-at="2023-09-15T13:31:28 IST" duration-ms="34719" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->

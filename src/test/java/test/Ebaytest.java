@@ -1,25 +1,11 @@
 package test;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
+import basepkg.Ebaybase;
 import page.Ebaypage;
 
-public class Ebaytest
-{
-	WebDriver driver;
-	String url="https://www.ebay.com/";
-	
-	@BeforeTest
-	public void setUp()
-	{
-		driver=new EdgeDriver();
-		driver.manage().window().maximize();
-		driver.get(url);
-	}
-	
+public class Ebaytest extends Ebaybase
+{	
 	@Test
 	public void test1()
 	{
