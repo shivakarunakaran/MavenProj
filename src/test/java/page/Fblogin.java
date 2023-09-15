@@ -3,7 +3,7 @@ package page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class Fbsearch 
+public class Fblogin 
 {
 	
 	WebDriver driver;
@@ -12,7 +12,7 @@ public class Fbsearch
 	By fbpassword=By.id("pass");
 	By fblogin=By.name("login");
 	
-	public Fbsearch(WebDriver driver)
+	public Fblogin(WebDriver driver)
 	{
 		this.driver=driver;
 	}

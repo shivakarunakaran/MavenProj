@@ -5,15 +5,15 @@ package test;
 import org.testng.annotations.Test;
 
 import basepkg.FbBasecls;
-import page.Fbsearch;
+import page.Fblogin;
 
-public class Fbsearchtest extends FbBasecls
+public class Fblogintest extends FbBasecls
 {
 	
 	@Test
 	public void logintest()
 	{
-		Fbsearch obj=new Fbsearch(driver); 
+		Fblogin obj=new Fblogin(driver); 
 		obj.setvalues("davy@gmailcom", "rose123");
 		obj.login();
 		
