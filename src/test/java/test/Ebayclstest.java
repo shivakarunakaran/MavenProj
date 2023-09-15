@@ -2,29 +2,32 @@ package test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import page.Ebaypage;
+import page.Ebayclspage;
 
-public class Ebaytest
+public class Ebayclstest 
 {
 	WebDriver driver;
-	String url="https://www.ebay.com/";
-	
 	@BeforeTest
-	public void setUp()
+	public void setup()
 	{
 		driver=new EdgeDriver();
-		driver.manage().window().maximize();
-		driver.get(url);
 	}
-	
+	@BeforeMethod
+	public void urlloading()
+	{	
+		driver.manage().window().maximize();
+		driver.get("https://www.ebay.com/");
+	}
 	@Test
 	public void test1()
 	{
-		Ebaypage ebay=new Ebaypage(driver);
-		ebay.selectoption();
-		ebay.entervalue("islaro@gmail.com");
+		Ebayclspage ob1=new Ebayclspage(driver);
+		ob1.test2();
+//		ob1.test3();
+		//ob1.test4("tomaloysius");	
 	}
 }

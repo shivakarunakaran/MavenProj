@@ -5,8 +5,9 @@
     <classes>
       <class name="test.Ebaytest">
         <methods>
+          <include name="test1"/>
           <include name="setUp"/>
-          <include name="test"/>
+          <include name="url"/>
         </methods>
       </class> <!-- test.Ebaytest -->
     </classes>
