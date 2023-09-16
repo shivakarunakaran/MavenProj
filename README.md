@@ -1,2 +1,2 @@
-Create test case in excel sheet 
-Execute test cases find bugs reported in excel 
+Create Mavem pom project
+write test automation script and execute
