@@ -1,6 +1,7 @@
 package page;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 public class Ebaypage 
@@ -16,6 +17,13 @@ public class Ebaypage
 	By sign=By.xpath("//*[@id=\"gh-ug\"]/a");
 	By user=By.xpath("//*[@id=\"userid\"]");
 	By con=By.xpath("//*[@id=\"signin-continue-btn\"]");
+	By home=By.xpath("//*[@id=\"gh-la\"]");
+	By search=By.xpath("//*[@id=\"gh-ac\"]");
+	By searchclick=By.xpath("//*[@id=\"gh-btn\"]");
+	By scroll=By.xpath("//*[@id=\"srp-river-results\"]/ul/li[61]/div[2]/span/span/nav/ol/li[4]/a");
+	By drop=By.xpath("//*[@id=\"srp-ipp-menu\"]/button");
+	By drop240=By.xpath("//*[@id=\"s0-53-17-6-3-4[60]-23-2-3-content-menu\"]/li[2]/a");
+	By go8th=By.xpath("//*[@id=\"srp-river-results\"]/ul/li[241]/div[2]/span/span/nav/ol/li[8]/a");
 	
 	public Ebaypage(WebDriver driver)
 	{
@@ -26,15 +34,30 @@ public class Ebaypage
 		driver.findElement(fashion).click();
 		driver.findElement(mens).click();
 		driver.findElement(shirt).click();
+//		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+//		JavascriptExecutor js=(JavascriptExecutor) driver;
+//		js.executeScript("window.scrollBy(0,20)","");
 		driver.findElement(seleshirt).click();
+		JavascriptExecutor jas=(JavascriptExecutor) driver;
+		jas.executeScript("window.scrollBy(0,100)", "");
 		driver.findElement(adcard).click();
 		driver.findElement(cart).click();
 		driver.findElement(sign).click();
 	}
 	
-	public void entervalue(String name)
+	public void entervalue(String name, String sear)
 	{
 		driver.findElement(user).sendKeys(name);
 		driver.findElement(con).click();
+		driver.findElement(home).click();
+		driver.findElement(search).sendKeys(sear);
+		driver.findElement(searchclick).click();
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,100)", "");
+		driver.findElement(scroll).click();
+		driver.findElement(drop).click();
+		driver.findElement(drop240).click();
+		driver.findElement(go8th).click();
 	}
 }
