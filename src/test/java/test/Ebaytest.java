@@ -11,7 +11,7 @@ public class Ebaytest extends Ebaybasecls
 	{
 		Ebaypage ebay=new Ebaypage(driver);
 		ebay.selectoption();
-		ebay.entervalue("islaro@gmail.com","cricket bat");
-		ebay.clickoptions();
+		ebay.entervalue("islaro@gmail.com");
+		ebay.clickoptions("cricket bat");
 	}
 }
