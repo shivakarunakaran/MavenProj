@@ -10,8 +10,8 @@ public class Ebaytest extends Ebaybasecls
 	public void test1()
 	{
 		Ebaypage ebay=new Ebaypage(driver);
-		ebay.selectoption();
-		ebay.entervalue("islaro@gmail.com");
+		ebay.selectoption("islaro@gmail.com");
 		ebay.clickoptions("cricket bat");
+		ebay.selvalues("iphone");
 	}
 }

@@ -2,6 +2,7 @@ package basepkg;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.annotations.BeforeTest;
 
 public class Ebaybasecls 
@@ -14,6 +15,8 @@ public class Ebaybasecls
 	public void setUp()
 	{
 		driver=new EdgeDriver();
+		EdgeOptions option=new EdgeOptions();
+		option.addArguments("--disable-notifications");
 		driver.manage().window().maximize();
 		driver.get(url);
 	}
