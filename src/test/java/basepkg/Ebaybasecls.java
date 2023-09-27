@@ -15,9 +15,9 @@ public class Ebaybasecls
 	public void setUp()
 	{
 		driver=new EdgeDriver();
-		EdgeOptions option=new EdgeOptions();
-		option.addArguments("--disable-notifications");
 		driver.manage().window().maximize();
 		driver.get(url);
+		EdgeOptions option=new EdgeOptions();
+		option.addArguments("--disable-notifications");
 	}
 }
