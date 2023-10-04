@@ -29,15 +29,17 @@ public class Ebaypage
 	By searchclick=By.xpath("//*[@id=\"gh-btn\"]");
 	By clicdrpdwn=By.xpath("//*[@id=\"srp-ipp-menu\"]/button");
 	By seledrp240=By.xpath("//*[@id=\"s0-53-17-6-3-4[60]-23-2-3-content-menu\"]/li[2]/a");
-	By scrollto4pg=By.xpath("//*[@id=\"srp-river-results\"]/ul/li[241]/div[2]/span/span/nav/ol/li[4]");
-	By selebat=By.xpath("//*[@id=\"item28eed4ad57\"]/div/div[2]/a");
+//	By scrollto4pg=By.xpath("//*[@id=\"srp-river-results\"]/ul/li[241]/div[2]/span/span/nav/ol/li[4]");
+	By selebat=By.xpath("//*[@id=\"item59e9259c32\"]/div/div[2]/a");
 	By addbatcard=By.xpath("//*[@id=\"mainContent\"]/div[2]/div/div[1]/div[2]/ul/li[2]/div");
-	By clensearch=By.xpath("//*[@id=\"gh-ac-box\"]");
+	By clensearch=By.xpath("//*[@id=\"gh-ac\"]");
 	
 	//SearchPhone
-	By searphon=By.xpath("//*[@id=\"gh-ac-box\"]");
+	By searphon=By.xpath("//*[@id=\"gh-ac\"]");
 	By clisearch=By.xpath("//*[@id=\"gh-btn\"]");
-	By selephon=By.xpath("//*[@id=\"item5e0205b1f9\"]/div/div[2]/a/div");
+	By selephon=By.xpath("//*[@id=\"item3488e9018f\"]/div/div[2]/a");
+	By phoclor=By.xpath("//*[@id=\"x-msku__select-box-1000\"]");
+	By phostor=By.xpath("//*[@id=\"x-msku__select-box-1001\"]");
 	By addphoncard=By.xpath("//*[@id=\"mainContent\"]/div[2]/div/div[1]/div[2]/ul/li[2]/div/a");
 	
 	
@@ -71,10 +73,10 @@ public class Ebaypage
 		jsc.executeScript("arguments[0].scrollIntoView();", ele);
 		ele.click();
 		driver.findElement(seledrp240).click();
-		JavascriptExecutor jas=(JavascriptExecutor) driver;
-		WebElement we=driver.findElement(scrollto4pg);
-		jas.executeScript("arguments[0].scrollIntoView();", we);
-		we.click();
+//		JavascriptExecutor jas=(JavascriptExecutor) driver;
+//		WebElement we=driver.findElement(scrollto4pg);
+//		jas.executeScript("arguments[0].scrollIntoView();", we);
+//		we.click();
 
 		String parentwindow=driver.getWindowHandle();
 		System.out.println("Parent Window Title : "+driver.getTitle());
@@ -92,11 +94,16 @@ public class Ebaypage
 			{
 				driver.switchTo().window(handle);
 				driver.findElement(addbatcard).click();
-				driver.close();
+//				driver.close();
 			}
 			driver.switchTo().window(parentwindow);
+			System.out.println("Return to Parent Window");
 		}
-		driver.findElement(clensearch).clear();
+		JavascriptExecutor jascr=(JavascriptExecutor)driver;
+		WebElement webel=driver.findElement(clensearch);
+		jascr.executeScript("arguments[0].scrollIntoView()", webel);
+		webel.clear();
+//		driver.findElement(clensearch).clear();
 	}
 	
 	public void selvalues(String seaphon)
@@ -104,9 +111,9 @@ public class Ebaypage
 		driver.findElement(searphon).sendKeys(seaphon);
 		driver.findElement(clisearch).click();
 		JavascriptExecutor jav=(JavascriptExecutor)driver;
-		WebElement webel=driver.findElement(selephon);
-		jav.executeScript("arguments[0].scrollIntoView()", webel);
-		webel.click();
+		WebElement webele=driver.findElement(selephon);
+		jav.executeScript("arguments[0].scrollIntoView()", webele);
+		webele.click();
 		driver.findElement(addphoncard).click();
 	}
 }

@@ -7,11 +7,12 @@ import page.Ebaypage;
 public class Ebaytest extends Ebaybasecls
 {	
 	@Test
-	public void test1()
+	public void Ebay()
 	{
 		Ebaypage ebay=new Ebaypage(driver);
 		ebay.selectoption("islaro@gmail.com");
 		ebay.clickoptions("cricket bat");
 		ebay.selvalues("iphone");
 	}
+	
 }
