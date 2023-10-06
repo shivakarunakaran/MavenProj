@@ -11,7 +11,7 @@
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.10.0</version>
+    <version>4.13.0</version>
 </dependency>
 
   
@@ -23,19 +23,17 @@
     <scope>test</scope>
 </dependency>
 
+
+
 <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 <dependency>
     <groupId>org.apache.poi</groupId>
     <artifactId>poi</artifactId>
-    <version>5.2.3</version>
+    <version>5.2.4</version>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
-<dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>poi-ooxml</artifactId>
-    <version>5.2.3</version>
-</dependency>
+
 
 
 </dependencies>

@@ -39,6 +39,7 @@ public class Ebaypage
 	By clisearch=By.xpath("//*[@id=\"gh-btn\"]");
 	By selephon=By.xpath("//*[@id=\"item3488e9018f\"]/div/div[2]/a");
 	By phoclor=By.xpath("//*[@id=\"x-msku__select-box-1000\"]");
+	
 	By phostor=By.xpath("//*[@id=\"x-msku__select-box-1001\"]");
 	By addphoncard=By.xpath("//*[@id=\"mainContent\"]/div[2]/div/div[1]/div[2]/ul/li[2]/div/a");
 	
