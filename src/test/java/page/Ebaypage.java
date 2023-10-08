@@ -114,7 +114,7 @@ public class Ebaypage
 		el.click();
 		Select sel=new Select(el);
 		sel.selectByVisibleText("Red");
-		List<WebElement> list1=sel.getOptions();
+		List<WebElement> licolr=sel.getOptions();
 		
 		JavascriptExecutor javasc=(JavascriptExecutor) driver;
 		WebElement elm=driver.findElement(phostor);
@@ -122,7 +122,7 @@ public class Ebaypage
 		elm.click();
 		Select sele=new Select(elm);
 		sele.selectByValue("6");
-		List<WebElement> list2=sele.getOptions();
+		List<WebElement> listore=sele.getOptions();
 		
 		JavascriptExecutor exe=(JavascriptExecutor)driver;
 		WebElement webmnt=driver.findElement(addphoncard);
