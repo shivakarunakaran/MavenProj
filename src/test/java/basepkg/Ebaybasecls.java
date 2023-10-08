@@ -9,15 +9,15 @@ public class Ebaybasecls
 {
 	public WebDriver driver;
 	
-	String url="https://www.ebay.com/";
+	String baseurl="https://www.ebay.com/";
 	
 	@BeforeTest
 	public void setUp()
 	{
-		driver=new EdgeDriver();
-		driver.manage().window().maximize();
-		driver.get(url);
 		EdgeOptions option=new EdgeOptions();
 		option.addArguments("--disable-notifications");
+		driver=new EdgeDriver(option);
+		driver.manage().window().maximize();
+		driver.get(baseurl);
 	}
 }
