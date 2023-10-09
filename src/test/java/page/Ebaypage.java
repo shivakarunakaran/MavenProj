@@ -16,7 +16,7 @@ public class Ebaypage
 	By fashion=By.xpath("//*[@id=\"mainContent\"]/div[1]/ul/li[5]/a");
 	By mens=By.xpath("//*[@id=\"mainContent\"]/section[1]/div[2]/a[1]/div[2]");
 	By shirt=By.xpath("//*[@id=\"s0-28-9-0-1[0]-0-1[0]-0-4-list\"]/li[1]/a/div/img");
-	By seleshirt=By.xpath("//*[@id=\"s0-28-9-0-1[1]-0-0-4-list\"]/li[1]/a/div[1]/div/img");
+	By seleshirt=By.xpath("//*[@id=\"s0-28-9-0-1[1]-0-0-4-list\"]/li[2]/a");
 	By addshirtcard=By.xpath("//*[@id=\"mainContent\"]/div[2]/div/div[1]/div[2]/ul/li[2]/div/a");
 	By signup=By.xpath("//*[@id=\"gh-ug\"]/a");
 	By username=By.xpath("//*[@id=\"userid\"]");
@@ -55,7 +55,10 @@ public class Ebaypage
 		WebElement web= driver.findElement(seleshirt);
 		js.executeScript("arguments[0].scrollIntoView();", web);
 		web.click();
-		driver.findElement(addshirtcard).click();
+		JavascriptExecutor jscard=(JavascriptExecutor) driver;
+		WebElement card=driver.findElement(addshirtcard);
+		jscard.executeScript("arguments[0].scrollIntoView();", card);
+		card.click();
 		driver.findElement(signup).click();	
 		driver.findElement(username).sendKeys(name);
 		driver.findElement(contin).click();
