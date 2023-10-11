@@ -13,33 +13,34 @@ public class Ebaybasecls
 	
 	String baseurl="https://www.ebay.com/";
 	
-	@Parameters("Browser")
 	@BeforeTest
-	public void setUp(String browserName)
-	{
-		System.out.println("Parameter value is "+browserName);
-		
-		if(browserName.contains("Edge"))
-		{
-			EdgeOptions option=new EdgeOptions();
-			driver=new EdgeDriver(option);
-			driver.manage().window().maximize();
-			driver.get(baseurl);
-			option.addArguments("--disable-notifications");
-		}
-		else if(browserName.contains("Chrome"))
-		{
-			WebDriver driver=new ChromeDriver();
-		}
+	public void setUp()
+	{	
+		EdgeOptions option=new EdgeOptions();
+		driver=new EdgeDriver(option);
+		driver.manage().window().maximize();
+		driver.get(baseurl);
+		option.addArguments("--disable-notifications");
 	}
 	
+//	@Parameters("Browser")
 //	@BeforeTest
-//	public void setUp()
-//	{	
-//		EdgeOptions option=new EdgeOptions();
-//		driver=new EdgeDriver(option);
-//		driver.manage().window().maximize();
-//		driver.get(baseurl);
-//		option.addArguments("--disable-notifications");
+//	public void setUp(String browserName)
+//	{
+//		System.out.println("Parameter value is "+browserName);
+//		
+//		if(browserName.contains("Edge"))
+//		{
+//			EdgeOptions option=new EdgeOptions();
+//			driver=new EdgeDriver(option);
+//			driver.manage().window().maximize();
+//			driver.get(baseurl);
+//			option.addArguments("--disable-notifications");
+//		}
+//		else if(browserName.contains("Chrome"))
+//		{
+//			WebDriver driver=new ChromeDriver();
+//		}
 //	}
+
 }
