@@ -12,12 +12,11 @@ public class Ebaybasecls
 	public WebDriver driver=null;
 	
 	String baseurl="https://www.ebay.com/";
+	
 	@Parameters("Browser")
-	@BeforeTest
-	public void setUp(String browserName)
+	public void parameter(String browserName)
 	{
 		System.out.println("Parameter value is "+browserName);
-//		WebDriver driver=null;
 		
 		if(browserName.contains("Edge"))
 		{
@@ -27,11 +26,15 @@ public class Ebaybasecls
 		{
 			WebDriver driver=new ChromeDriver();
 		}
-		
+	}
+	
+	@BeforeTest
+	public void setUp()
+	{	
 		EdgeOptions option=new EdgeOptions();
-		option.addArguments("--disable-notifications");
 		driver=new EdgeDriver(option);
 		driver.manage().window().maximize();
 		driver.get(baseurl);
+		option.addArguments("--disable-notifications");
 	}
 }
