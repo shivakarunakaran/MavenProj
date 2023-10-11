@@ -3,7 +3,9 @@
 <suite name="Suite">
 	<test thread-count="4" name="TEST">
 		<classes>
+			
 			<class name="test.Ebaytest"/>
+			
 		</classes>
 	</test>
 </suite>
