@@ -14,13 +14,18 @@ public class Ebaybasecls
 	String baseurl="https://www.ebay.com/";
 	
 	@Parameters("Browser")
-	public void parameter(String browserName)
+	@BeforeTest
+	public void setUp(String browserName)
 	{
 		System.out.println("Parameter value is "+browserName);
 		
 		if(browserName.contains("Edge"))
 		{
-			WebDriver driver=new EdgeDriver();
+			EdgeOptions option=new EdgeOptions();
+			driver=new EdgeDriver(option);
+			driver.manage().window().maximize();
+			driver.get(baseurl);
+			option.addArguments("--disable-notifications");
 		}
 		else if(browserName.contains("Chrome"))
 		{
@@ -28,13 +33,13 @@ public class Ebaybasecls
 		}
 	}
 	
-	@BeforeTest
-	public void setUp()
-	{	
-		EdgeOptions option=new EdgeOptions();
-		driver=new EdgeDriver(option);
-		driver.manage().window().maximize();
-		driver.get(baseurl);
-		option.addArguments("--disable-notifications");
-	}
+//	@BeforeTest
+//	public void setUp()
+//	{	
+//		EdgeOptions option=new EdgeOptions();
+//		driver=new EdgeDriver(option);
+//		driver.manage().window().maximize();
+//		driver.get(baseurl);
+//		option.addArguments("--disable-notifications");
+//	}
 }
