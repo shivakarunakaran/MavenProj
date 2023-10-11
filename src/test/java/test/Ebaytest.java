@@ -14,5 +14,4 @@ public class Ebaytest extends Ebaybasecls
 //		ebay.clickoptions("cricket bat");
 //		ebay.selvalues("iphone");
 	}
-	
 }
