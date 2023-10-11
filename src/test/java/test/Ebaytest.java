@@ -9,6 +9,7 @@ public class Ebaytest extends Ebaybasecls
 	@Test
 	public void Ebay()
 	{	
+		
 		Ebaypage ebay=new Ebaypage(driver);
 		ebay.selectoption("islarose@gmail.com");
 //		ebay.clickoptions("cricket bat");
