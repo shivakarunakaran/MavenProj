@@ -6,6 +6,7 @@ import page.Ebaypage;
 
 public class Ebaytest extends Ebaybasecls
 {	
+	
 	@Test
 	public void Ebay()
 	{			
