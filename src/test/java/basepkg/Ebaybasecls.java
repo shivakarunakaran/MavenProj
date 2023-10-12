@@ -22,6 +22,7 @@ public class Ebaybasecls
 		driver.get(baseurl);
 		option.addArguments("--disable-notifications");
 	}
+}
 	
 //	@Parameters("Browser")
 //	@BeforeTest
@@ -43,4 +44,4 @@ public class Ebaybasecls
 //		}
 //	}
 
-}
+//}
