@@ -28,7 +28,7 @@ public class Ebaypage
 	By searchclick=By.xpath("//*[@id=\"gh-btn\"]");
 	By clicdrpdwn=By.xpath("//*[@id=\"srp-ipp-menu\"]/button");
 	By seledrp240=By.xpath("//*[@id=\"s0-53-17-6-3-4[60]-23-2-3-content-menu\"]/li[2]/a");
-	By selebat=By.xpath("//*[@id=\"item59e9259c32\"]/div/div[2]/a");
+	By selebat=By.xpath("//*[@id=\"item59e742c918\"]/div/div[2]/a/div");
 	By addbatcard=By.xpath("//*[@id=\"mainContent\"]/div[2]/div/div[1]/div[2]/ul/li[2]/div");
 	By clensearch=By.xpath("//*[@id=\"gh-ac\"]");
 	
@@ -93,8 +93,8 @@ public class Ebaypage
 				driver.close();
 			}
 			driver.switchTo().window(parentwindow);
-			System.out.println("Return to Parent Window");
 		}
+		System.out.println("Return to Parent Window"+parentwindow);
 		JavascriptExecutor jascr=(JavascriptExecutor)driver;
 		WebElement webel=driver.findElement(clensearch);
 		jascr.executeScript("arguments[0].scrollIntoView()", webel);
