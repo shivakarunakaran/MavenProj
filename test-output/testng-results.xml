@@ -2,38 +2,38 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-13T21:42:30 IST" name="Default suite" finished-at="2023-10-13T21:46:38 IST" duration-ms="248091">
+  <suite started-at="2023-10-14T15:01:33 IST" name="Default suite" finished-at="2023-10-14T15:03:59 IST" duration-ms="146495">
     <groups>
     </groups>
-    <test started-at="2023-10-13T21:42:30 IST" name="Default test" finished-at="2023-10-13T21:46:38 IST" duration-ms="248091">
+    <test started-at="2023-10-14T15:01:33 IST" name="Default test" finished-at="2023-10-14T15:03:59 IST" duration-ms="146495">
       <class name="test.Ebaytest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Ebaytest@53045c6c]" started-at="2023-10-13T21:42:30 IST" name="setUp" finished-at="2023-10-13T21:43:32 IST" duration-ms="62280" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Ebaytest@53045c6c]" started-at="2023-10-14T15:01:33 IST" name="setUp" finished-at="2023-10-14T15:01:50 IST" duration-ms="17619" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Ebay()[pri:0, instance:test.Ebaytest@53045c6c]" started-at="2023-10-13T21:43:32 IST" name="Ebay" finished-at="2023-10-13T21:46:38 IST" duration-ms="185474" status="FAIL">
+        <test-method signature="Ebay()[pri:0, instance:test.Ebaytest@53045c6c]" started-at="2023-10-14T15:01:50 IST" name="Ebay" finished-at="2023-10-14T15:03:59 IST" duration-ms="128737" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="x-msku__select-box-1000"]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="x-msku__option-box-2"]"}
   (Session info: MicrosoftEdge=116.0.1938.81)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [149bea90b37d9d3eb09907c888ee2b72, findElement {using=xpath, value=//*[@id="x-msku__select-box-1000"]}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62682}, msedge: {msedgedriverVersion: 116.0.1938.98 (8e3507a75f3d..., userDataDir: C:\Users\SHIVAK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62682/devtoo..., se:cdpVersion: 116.0.1938.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 149bea90b37d9d3eb09907c888ee2b72]]>
+Command: [73aceb1eacf9d2f74efbac6a9065c08c, findElement {using=xpath, value=//*[@id="x-msku__option-box-2"]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60490}, msedge: {msedgedriverVersion: 116.0.1938.98 (8e3507a75f3d..., userDataDir: C:\Users\SHIVAK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60490/devtoo..., se:cdpVersion: 116.0.1938.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73aceb1eacf9d2f74efbac6a9065c08c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="x-msku__select-box-1000"]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="x-msku__option-box-2"]"}
   (Session info: MicrosoftEdge=116.0.1938.81)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [149bea90b37d9d3eb09907c888ee2b72, findElement {using=xpath, value=//*[@id="x-msku__select-box-1000"]}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62682}, msedge: {msedgedriverVersion: 116.0.1938.98 (8e3507a75f3d..., userDataDir: C:\Users\SHIVAK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62682/devtoo..., se:cdpVersion: 116.0.1938.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 149bea90b37d9d3eb09907c888ee2b72
+Command: [73aceb1eacf9d2f74efbac6a9065c08c, findElement {using=xpath, value=//*[@id="x-msku__option-box-2"]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60490}, msedge: {msedgedriverVersion: 116.0.1938.98 (8e3507a75f3d..., userDataDir: C:\Users\SHIVAK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60490/devtoo..., se:cdpVersion: 116.0.1938.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73aceb1eacf9d2f74efbac6a9065c08c
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -50,7 +50,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at page.Ebaypage.mobilevalues(Ebaypage.java:115)
+at page.Ebaypage.mobilevalues(Ebaypage.java:124)
 at test.Ebaytest.Ebay(Ebaytest.java:15)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)

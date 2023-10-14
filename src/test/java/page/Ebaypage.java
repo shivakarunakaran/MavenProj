@@ -90,11 +90,11 @@ public class Ebaypage
 			{
 				driver.switchTo().window(handle);
 				driver.findElement(addbatcard).click();
-				driver.close();
+//				driver.close();
 			}
 			driver.switchTo().window(parentwindow);
+			System.out.println("Return to Parent Window"+parentwindow);
 		}
-		System.out.println("Return to Parent Window"+parentwindow);
 		JavascriptExecutor jascr=(JavascriptExecutor)driver;
 		WebElement webel=driver.findElement(clensearch);
 		jascr.executeScript("arguments[0].scrollIntoView()", webel);
@@ -111,21 +111,21 @@ public class Ebaypage
 		jav.executeScript("arguments[0].scrollIntoView()", webele);
 		webele.click();
 		
-		JavascriptExecutor java=(JavascriptExecutor) driver;
-		WebElement el=driver.findElement(phoclor);
-		java.executeScript("arguments[0].scrollIntoView()", el);
-		el.click();
-		Select sel=new Select(el);
-		sel.selectByVisibleText("Red");
-		List<WebElement> licolr=sel.getOptions();
+	
+		WebElement color=driver.findElement(phoclor);
+//		color.click();
+		Select selectcolor=new Select(color);
+		List<WebElement> listcolor=selectcolor.getOptions();
+		selectcolor.selectByVisibleText("Blue");
+		System.out.println(listcolor.size());
 		
-		JavascriptExecutor javasc=(JavascriptExecutor) driver;
-		WebElement elm=driver.findElement(phostor);
-		javasc.executeScript("arguments[0].scrollIntoView()", elm);
-		elm.click();
-		Select sele=new Select(elm);
-		sele.selectByValue("6");
-		List<WebElement> listore=sele.getOptions();
+		WebElement store=driver.findElement(phostor);
+//		store.click();
+		Select selectstore=new Select(store);
+		List<WebElement> liststore=selectstore.getOptions();
+		selectstore.selectByValue("6");
+		System.out.println(liststore.size());
+		
 		
 		JavascriptExecutor exe=(JavascriptExecutor)driver;
 		WebElement webmnt=driver.findElement(addphoncard);
